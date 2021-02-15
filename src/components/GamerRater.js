@@ -5,10 +5,10 @@ import { NavBar } from "./nav/NavBar"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 
-export const LevelUp = () => (
+export const GamerRater = () => (
     <>
         <Route render={() => {
-            if (localStorage.getItem("lu_token")) {
+            if (localStorage.getItem("gr_token")) {
                 return <>
                     <Route render={NavBar} />
                     <Route render={props => <ApplicationViews {...props} />} />
